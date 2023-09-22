@@ -19,11 +19,16 @@ body{
 nav{
     font-size: 18px;
     font-weight: bold;
+    z-index: 1000;
+    
 }
 
 li.nav-item{
-    margin-left: 10px;
     margin-right: 10px;
+    background-color: rgb(250, 250, 250);
+    text-align: justify left;
+    padding-left: 1rem;
+    width: 100%;
 }
 .nav-link {
     color: rgb(177, 149, 119);
@@ -38,19 +43,29 @@ li.nav-item{
     width: 250px;
 }
 /* FOOTER */
+
+
 footer{
     background-color: rgb(250, 250, 250);
     color: rgb(177, 149, 119);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    
+    
+    margin-top: 5rem;
+    display: flex; /* Habilita el modelo flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 60px;
 }
 
 .footer{
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 100%;
 }
+
+
+
 
 /* FORMULARIO */
 .btn-submit{
@@ -96,9 +111,17 @@ div.col-4{
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5rem;
 }
 
 .card{
     margin: 1rem;
+    flex: 1;
 }
+
+/* Media query para pantallas pequeñas (por ejemplo, hasta 768px de ancho) */
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 2; /* Ajusta la proporción de espacio entre las tarjetas en pantallas pequeñas */
+    }
