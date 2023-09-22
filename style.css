@@ -40,7 +40,7 @@ li.nav-item{
 /* ICONO */
 
 .icono{
-    width: 250px;
+    width: 210px;
 }
 /* FOOTER */
 
@@ -112,16 +112,22 @@ div.col-4{
 .cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 5rem;
 }
 
 .card{
     margin: 1rem;
-    flex: 1;
+    flex-basis: calc(33.33% - 2rem);
 }
 
-/* Media query para pantallas pequeñas (por ejemplo, hasta 768px de ancho) */
 @media screen and (max-width: 768px) {
-    .card {
-        flex: 2; /* Ajusta la proporción de espacio entre las tarjetas en pantallas pequeñas */
+    .cards {
+        flex-direction: column;
     }
+
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+}
