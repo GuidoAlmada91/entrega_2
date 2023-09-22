@@ -7,6 +7,11 @@ body{
 
 /* NAVBAR */
 
+.navbar-collapse.show {
+    margin-top: 10px;
+    width: 100%;
+}
+
 #navbarNavDropdown{
     
     justify-content: right;

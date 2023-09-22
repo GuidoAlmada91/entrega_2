@@ -9,6 +9,11 @@ body{
     width: 100%;
 }
 
+.navbar-collapse.show {
+    margin-top: 10px;
+    width: 100%;
+}
+
 #navbarNavDropdown{
     
     justify-content: right;
@@ -38,6 +43,7 @@ li.nav-item{
 .nav-link:hover {
     color: rgb(109, 97, 80);
 }
+
 
 /* ICONO */
 .icono{
