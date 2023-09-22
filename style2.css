@@ -22,6 +22,7 @@ nav{
     font-size: 18px;
     font-weight: bold;
     z-index: 1000;
+    
 }
 
 li.nav-item{
@@ -37,9 +38,10 @@ li.nav-item{
 .nav-link:hover {
     color: rgb(109, 97, 80);
 }
+
 /* ICONO */
 .icono{
-    width: 250px;
+    width: 210px;
 }
 /* FOOTER */
 footer{
